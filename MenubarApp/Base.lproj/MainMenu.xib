@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ZoomZoom" customModuleProvider="target">
+            <connections>
+                <outlet property="distanceLabel" destination="gxE-FA-buX" id="Je2-OJ-5hN"/>
+                <outlet property="statusMenu" destination="kXy-5t-4nm" id="QrV-1T-Qtb"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="kXy-5t-4nm">
+            <items>
+                <menuItem title="Enable Magic Zoom" id="od9-su-Gke">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleClicked:" target="Voe-Tx-rLC" id="QFQ-yL-x68"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="rn9-sY-OT4"/>
+                <menuItem title="Distance: N/A" id="gxE-FA-buX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="342" y="369.5"/>
+        </menu>
+    </objects>
+</document>
